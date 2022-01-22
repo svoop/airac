@@ -5,7 +5,7 @@
 
 # AIRAC
 
-[AIRAC cycle](https://en.wikipedia.org/wiki/Aeronautical_Information_Publication) calculations for Ruby.
+[AIRAC (Aeronautical Information Regulation And Control)](https://en.wikipedia.org/wiki/Aeronautical_Information_Publication) cycle calculations for Ruby.
 
 * [Homepage](https://github.com/svoop/airac)
 * [API](https://www.rubydoc.info/gems/airac)
