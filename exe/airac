@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'bundler/inline'
+
+gemfile do
+  source 'https://rubygems.org'
+  ruby '>= 3.0.0'
+  gem 'airac'
+end
+
+AIRAC::Executable.new.run

@@ -40,14 +40,30 @@ bundle install --trust-policy MediumSecurity
 You can use this gem in your Ruby project:
 
 ```ruby
-airac = AIPP::AIRAC.new('2018-01-01')
-airac.date        # => #<Date: 2017-12-07 ((2458095j,0s,0n),+0s,2299161j)>
-airac.id          # => 1713
-airac.next_date   # => #<Date: 2018-01-04 ((2458123j,0s,0n),+0s,2299161j)>
-airac.next_id     # => 1801
+cycle = AIRAC::Cycle.new('2018-01-01')
+cycle.date         # => #<Date: 2017-12-07 ((2458095j,0s,0n),+0s,2299161j)>
+cycle.id           # => 1713
+(cycle + 5).id     # => 1804
+(cycle - 5).id     # => 1708
 ```
 
-Or use the `airac` executable:
+The cycle can be formatted similar to `Date#strftime`, however, the placeholder `%i` represents the AIRAC cycle ID:
+
+```ruby
+cycle = AIRAC::Cycle.new('2018-01-01')
+cycle.to_s                            # "1713 2017-12-07"
+cycle.to_s("@%i as per %b %-d, %Y")   # => "@1713 as per Dec 7, 2017"
+```
+
+The current AIRAC cycle scheme started on 2015-06-25, therefore any calculation which leads to dates prior to inception will cause an error:
+
+```ruby
+(cycle - 100).id   # => ArgumentError
+```
+
+The `AIRAC::Cycle` class implements `Comparable` and its instances can safely be used s `Hash` keys.
+
+If you prefer to do the math on the shell, the `airac` executable is your friend:
 
 ```shell
 airac --help
