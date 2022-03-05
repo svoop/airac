@@ -1,9 +1,18 @@
-/.bundle/
-/.yardoc
-/_yardoc/
-/coverage/
-/doc/
-/pkg/
-/spec/reports/
-/tmp/
+# macOS
 .DS_Store
+
+# direnv
+.direnv
+.envrc
+
+# Editors
+.nova
+.vscode
+*.sublime*
+
+# Ruby
+gems.locked
+pkg/*
+*.gem
+.bundle
+.yardoc
