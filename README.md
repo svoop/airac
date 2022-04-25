@@ -26,7 +26,7 @@ gem cert --add <(curl -Ls https://raw.github.com/svoop/airac/main/certs/svoop.pe
 Add the following to the <tt>Gemfile</tt> or <tt>gems.rb</tt> of your [Bundler](https://bundler.io) powered Ruby project:
 
 ```ruby
-gem airac
+gem 'airac'
 ```
 
 And then install the bundle:
