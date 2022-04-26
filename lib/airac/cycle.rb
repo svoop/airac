@@ -4,7 +4,8 @@ module AIRAC
   #
   # @example
   #   cycle = AIRAC::Cycle.new('2018-01-01')
-  #   cycle.date         # => #<Date: 2017-12-07 ((2458095j,0s,0n),+0s,2299161j)>
+  #   cycle.date         # => #<Date: 2017-12-07>
+  #   cycle.effective    # => 2017-12-07 00:00:00 UTC..2018-01-03 23:59:59 UTC
   #   cycle.id           # => 1713
   #   (cycle + 5).id     # => 1804
   #   (cycle - 5).id     # => 1708
@@ -48,6 +49,14 @@ module AIRAC
     # @return [String]
     def to_s(template=nil)
       date.strftime((template || '%i %Y-%m-%d').sub(/%i/, id))
+    end
+
+    # Time range within which this cycle is effective.
+    #
+    # @return [Range<Time>]
+    def effective
+      next_date = date + DAYS_PER_CYCLE
+      (Time.utc(date.year, date.month, date.day)..(Time.utc(next_date.year, next_date.month, next_date.day) - 1))
     end
 
     # @param days [Numerical] add this many days

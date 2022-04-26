@@ -1,6 +1,7 @@
 ## Main
 
-Nothing so far
+#### Additions
+* Effective time range for any given cycle
 
 ## 1.0.0
 

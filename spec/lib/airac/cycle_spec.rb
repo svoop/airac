@@ -53,7 +53,12 @@ describe AIRAC::Cycle do
       _(AIRAC::Cycle.new('2018-01-05').date).must_equal Date.parse('2018-01-04')
       _(AIRAC::Cycle.new('2020-12-31').date).must_equal Date.parse('2020-12-31')
     end
+  end
 
+  describe :effective do
+    it "calculates the time range correctly" do
+      _(AIRAC::Cycle.new('2021-04-01').effective).must_equal (Time.utc(2021, 3, 25)..Time.utc(2021, 4, 21, 23, 59, 59))
+    end
   end
 
   describe :to_s do

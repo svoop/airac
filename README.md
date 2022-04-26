@@ -41,7 +41,8 @@ You can use this gem in your Ruby project:
 
 ```ruby
 cycle = AIRAC::Cycle.new('2018-01-01')
-cycle.date         # => #<Date: 2017-12-07 ((2458095j,0s,0n),+0s,2299161j)>
+cycle.date         # => #<Date: 2017-12-07>
+cycle.effective    # => 2017-12-07 00:00:00 UTC..2018-01-03 23:59:59 UTC
 cycle.id           # => 1713
 (cycle + 5).id     # => 1804
 (cycle - 5).id     # => 1708
