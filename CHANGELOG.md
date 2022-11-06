@@ -1,6 +1,7 @@
 ## Main
 
-Nothing so far
+#### Changes
+* Certificate updated
 
 ## 1.0.1
 
