@@ -1,5 +1,5 @@
 [![Version](https://img.shields.io/gem/v/airac.svg?style=flat)](https://rubygems.org/gems/airac)
-[![Tests](https://img.shields.io/github/workflow/status/svoop/airac/Test.svg?style=flat&label=tests)](https://github.com/svoop/airac/actions?workflow=Test)
+[![Tests](https://img.shields.io/github/actions/workflow/status/svoop/airac/test.yml?style=flat&label=tests)](https://github.com/svoop/airac/actions?workflow=Test)
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/svoop/airac.svg?style=flat)](https://codeclimate.com/github/svoop/airac/)
 [![Donorbox](https://img.shields.io/badge/donate-on_donorbox-yellow.svg)](https://donorbox.org/bitcetera)
 
