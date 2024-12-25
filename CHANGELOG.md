@@ -1,6 +1,7 @@
 ## Main
 
-Nothing so far
+#### Additions
+* Support Ruby 3.4
 
 ## 1.0.3
 
