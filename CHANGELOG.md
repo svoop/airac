@@ -1,30 +1,31 @@
 ## Main
 
-Nothing so far
+### Changes
+* Drop certs
 
 ## 1.0.4
 
-#### Additions
+### Additions
 * Support Ruby 3.4
 
 ## 1.0.3
 
-#### Additions
+### Additions
 * Support Ruby 3.3
 
 ## 1.0.2
 
-#### Changes
+### Changes
 * Certificate updated
 
 ## 1.0.1
 
-#### Additions
+### Additions
 * Effective time range for any given cycle
 
 ## 1.0.0
 
-#### Initial Implementation
+### Initial Implementation
 * Require Ruby 3
 * Simple AIRAC calculations and comparisons
 * CLI tool
