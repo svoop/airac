@@ -1,6 +1,7 @@
 ## Main
 
-Nothing so far
+### Changes
+* Support Ruby 4.0
 
 ## 1.1.0
 
