@@ -6,7 +6,8 @@ require 'minitest/autorun'
 require Pathname(__dir__).join('..', 'lib', 'airac')
 
 require 'minitest/flash'
-require 'minitest/focus'
+
+Minitest.load_plugins
 
 class Minitest::Spec
   class << self
