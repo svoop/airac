@@ -7,6 +7,9 @@
 
 [AIRAC (Aeronautical Information Regulation And Control)](https://en.wikipedia.org/wiki/Aeronautical_Information_Publication) cycle calculations for Ruby.
 
+> [!IMPORTANT]
+> For personal reasons, I am no longer contributing to Open Flightmaps and therefore this gem is now archived and will not be updated anymore. Feel free to contact me if you want to revive or sponsor it.
+
 * [Homepage](https://github.com/svoop/airac)
 * [API](https://www.rubydoc.info/gems/airac)
 * Author: [Sven Schwyn - Bitcetera](https://bitcetera.com)
